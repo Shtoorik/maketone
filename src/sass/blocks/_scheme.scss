@@ -1,0 +1,33 @@
+.scheme {
+  padding: 50px 0;
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 23px;
+    column-gap: 35px;
+    margin-top: 30px;
+  }
+  &__item {
+    width: 258px;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  &__caption {
+    font-size: 16px;
+    margin-top: 7px;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 700;
+    color: var(--main-color);
+  }
+  &__text {
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 300;
+    color: #3a3a3a;
+  }
+}

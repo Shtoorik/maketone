@@ -1,0 +1,28 @@
+.aboutus {
+  padding: 50px 0;
+  &__wrapper {
+    margin-top: 37px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    width: 360px;
+  }
+  &__caption {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    color: var(--main-color);
+  }
+  &__descr {
+    text-align: justify;
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #3a3a3a;
+    text-align-last: center;
+  }
+}

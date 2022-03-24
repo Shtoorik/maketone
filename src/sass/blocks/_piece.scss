@@ -1,0 +1,41 @@
+.agent,
+.managers {
+  min-height: 342px;
+  padding: 58px 0px 75px 0;
+  @supports (background-image: url("../img/section_2.webp")) {
+    background: url("../img/section_2.webp") center (center / cover) no-repeat;
+  }
+  background: url("../img/section_2.jpg") center (center / cover) no-repeat;
+  @media (min-resolution: 2dppx) {
+    @supports (background-image: url("../img/section_2@2x.webp")) {
+      background: url("../img/section_2@2x.webp") center (center / cover) no-repeat;
+    }
+    background: url("../img/section_2@2x.jpg") center (center / cover) no-repeat;
+  }
+  &__circle {
+    margin: 0 auto;
+    width: 102px;
+    height: 102px;
+    border: 1px solid #ffffff;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      max-width: 50%;
+      max-height: 50%;
+    }
+  }
+}
+.managers {
+  @supports (background-image: url("../img/section_3.webp")) {
+    background: url("../img/section_3.webp") center (center / cover) no-repeat;
+  }
+  background: url("../img/section_3.jpg") center (center / cover) no-repeat;
+  @media (min-resolution: 2dppx) {
+    @supports (background-image: url("../img/section_3@2x.webp")) {
+      background: url("../img/section_3@2x.webp") center (center / cover) no-repeat;
+    }
+    background: url("../img/section_3@2x.jpg") center (center / cover) no-repeat;
+  }
+}

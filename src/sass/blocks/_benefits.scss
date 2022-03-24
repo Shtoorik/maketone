@@ -1,0 +1,33 @@
+.benefits {
+  min-height: 590px;
+  padding: 50px 0;
+  background-color: #f3f3f3;
+  &__wrapper {
+    margin-top: 30px;
+    display: grid;
+    grid-template: minmax(65px, auto) / 526px 526px;
+    row-gap: 35px;
+    column-gap: 62px;
+  }
+  &__item {
+    display: flex;
+  }
+  &__img {
+    object-fit: cover;
+  }
+  &__text {
+    margin-left: 20px;
+  }
+  &__caption {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 700;
+    color: var(--main-color);
+  }
+  &__descr {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #3a3a3a;
+  }
+}

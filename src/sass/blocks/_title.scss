@@ -1,0 +1,43 @@
+.title {
+  font-size: 26px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2e2e2e;
+  text-align: center;
+  &_divider {
+    &:after {
+      content: "";
+      position: absolute;
+      top: 43px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 148px;
+      height: 1px;
+      background-color: var(--main-color);
+    }
+  }
+  &_mt20 {
+    margin-top: 20px;
+  }
+  &_white {
+    color: #ffffff;
+    text-transform: unset;
+  }
+}
+.subtitle {
+  font-size: 21px;
+  line-height: 1;
+  font-weight: 300;
+  color: #2e2e2e;
+  text-align: center;
+  &_mt38 {
+    margin-top: 38px;
+  }
+  &_mt22 {
+    margin-top: 22px;
+  }
+  &_white {
+    color: #ffffff;
+  }
+}

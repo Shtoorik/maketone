@@ -1,4 +1,93 @@
-@import 'libs/bootstrap-reboot.min';
+@import "libs/bootstrap-reboot.min";
+@import "libs/tiny-slider";
+@import "libs/animate";
 
 * {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body{
+  overflow-x: hidden
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+.container {
+  position: relative;
+  width: 1140px;
+  margin: 0 auto;
+  // background-color: #000;
+}
+:root {
+  --main-color: #ec644b;
+}
+a {
+  color: #000;
+  text-decoration: none;
+  &:hover {
+    color: #000;
+    text-decoration: none;
+  }
+}
+.point {
+  position: relative;
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  margin: 0 auto;
+  &:after {
+    content: "";
+    width: 460px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &:before {
+    content: "";
+    width: 460px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/buttons";
+@import "blocks/benefits";
+@import "blocks/title";
+@import "blocks/aboutus";
+@import "blocks/piece";
+@import "blocks/scheme";
+@import "blocks/reviews";
+@import "blocks/price";
+@import "blocks/questions";
+@import "blocks/footer";
+
+.address {
+  iframe {
+    display: block;
+    width: 100%;
+    border: 0px;
+  }
+}
+.pageup {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  img {
+    width: 100%;
+  }
 }

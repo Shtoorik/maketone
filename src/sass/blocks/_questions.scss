@@ -1,0 +1,97 @@
+.questions {
+  @supports (background-image: url("../img/section_4.webp")) {
+    background: url("../img/section_4.webp") center (center / cover) no-repeat;
+  }
+  background: url("../img/section_4.jpg") center (center / cover) no-repeat;
+  @media (min-resolution: 2dppx) {
+    @supports (background-image: url("../img/section_4@2x.webp")) {
+      background: url("../img/section_4@2x.webp") center (center / cover) no-repeat;
+    }
+    background: url("../img/section_4@2x.jpg") center (center / cover) no-repeat;
+  }
+  height: 438px;
+  padding: 62px 0px 79px 0px;
+  &__form {
+    height: 313px;
+    background-color: rgba(#ffffff, 0.7);
+    width: 896px;
+    margin: 0 auto;
+    textarea {
+      width: 815px;
+      height: 73px;
+      background-color: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      display: block;
+      margin: 0 auto;
+      resize: none;
+      border-radius: 10px;
+      padding: 14px 23px;
+      font-size: 13px;
+      color: #616467;
+      margin-bottom: 16px;
+    }
+  }
+  &__input {
+    margin-top: 17px;
+    display: flex;
+    justify-content: center;
+    // flex-wrap: wrap;
+    > div {
+      margin: 0 2px;
+      width: 270px;
+    }
+    input {
+      width: 270px;
+      height: 47px;
+      background-color: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 400px;
+      font-size: 13px;
+      padding: 0px 25px;
+      margin-bottom: 8px;
+    }
+    label {
+      font-size: 11px;
+      width: 270px;
+      text-align: center;
+      display: block;
+      margin-bottom: 5px;
+    }
+    /*    input.name{
+      order: -3;
+    }
+    input.phone{
+      order: -2;
+    }
+    input.email {
+      order: -1;
+    } */
+    .error {
+      border: 1px solid red;
+    }
+    label.error {
+      border: none; 
+    }
+  }
+  &__caption {
+    padding-top: 20px;
+    font-size: 19px;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #25333c;
+    text-align: center;
+  }
+  &__subcaption {
+    padding-top: 5px;
+    padding-bottom: 19px;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #25333c;
+    text-align: center;
+  }
+}

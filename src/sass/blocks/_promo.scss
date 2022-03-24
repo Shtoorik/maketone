@@ -1,0 +1,61 @@
+.promo {
+  @supports (background-image: url("../img/section_1.webp")) {
+    background: url("../img/section_1.webp") center (center / cover) no-repeat;
+  }
+  background: url("../img/section_1.jpg") center (center / cover) no-repeat;
+  @media (min-resolution: 2dppx) {
+    @supports (background-image: url("../img/section_1@2x.webp")) {
+      background: url("../img/section_1@2x.webp") center (center / cover) no-repeat;
+    }
+    background: url("../img/section_1@2x.jpg") center (center / cover) no-repeat;
+  }
+  padding-top: 132px;
+  padding-bottom: 82px;
+  &__main-title {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+  &__sub-title {
+    font-family: "Roboto Condensed", sans-serif;
+    color: #ec644b;
+    font-size: 72px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__caption {
+    font-family: "Roboto Condensed", sans-serif;
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+  }
+  &__reasons {
+    margin-top: 27px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  &__item {
+    width: 248px;
+  }
+  &_img {
+    text-align: center;
+  }
+  &_descr {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;
+  }
+}
